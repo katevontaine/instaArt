@@ -1,0 +1,40 @@
+body{
+background-color: black;
+width: 99%;
+font-family: 'Playfair Display', serif;
+margin: 0 auto;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  color: white;
+  display: inline-block;
+  font-size: 60px;
+  text-align: center;
+
+}
+.container{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.main{
+  background-color: red;
+  width:60%;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+
+}
+.side{
+  background-color: green;
+  width:25%;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+
+}
+span{
+  color: white;
+  font-size: 115px;
+
+}
