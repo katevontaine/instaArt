@@ -8,7 +8,5 @@ module.exports = Backbone.Model.extend({
     title:"My Picture",
     likes: '0'
   },
-  // initialize: function () {
-  //
-  // }
+
 });

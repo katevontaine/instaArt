@@ -18,9 +18,7 @@ module.exports = Backbone.Model.extend({
     title:"My Picture",
     likes: '0'
   },
-  // initialize: function () {
-  //
-  // }
+
 });
 
 },{"backbone":4}],3:[function(require,module,exports){
@@ -30,6 +28,14 @@ var ItemModel = require('./itemModel');
 
 
 $(document).ready(function () {
+  var myPhotoCollection = new ItemCollection();
+  var myPhotos = new ItemModel();
+  myPhotoCollection.fetch().then(function (collectionData) {
+    // $('.main').append(my);
+    console.log(collectionData);
+    
+  });
+
 
   var picTitle = ($(this).siblings('input[name="Title"]').val());
   var theLink = ($(this).siblings('input[name="Image"]').val());
@@ -54,7 +60,6 @@ $(document).ready(function () {
     var picTitle = ($(this).siblings('input[name="Title"]').val());
     var picLink = ($(this).siblings('input[name="Image"]').val());
     $('.main').append(picTitle + "<img src='" + picLink + "'>");
-    $('.main').html(myPhotoCollection);
 
   })
 
